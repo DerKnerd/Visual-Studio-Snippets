@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Property INotifyPropertyChanged</Title>
+      <Author>Coding Lizards</Author>
+      <Description>Property with OnPropertyChanged call</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>propnotify</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>type</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>int</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>myVar</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>myVar</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>MyProperty</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>MyProperty</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[private $type$ $myVar$;
+
+public $type$ $MyProperty$
+{
+    get { return $myVar$; }
+    set
+    {
+        if ($myVar$ != value)
+        {
+            $myVar$ = value;
+            OnPropertyChanged("$MyProperty$");
+        }
+    }
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
