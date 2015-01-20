@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Keywords>
+        <Keyword>propdm</Keyword>
+      </Keywords>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>propdm</Title>
+      <Author>ichbinsdereinzigware@live.de</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>propdm</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>datamembername</ID>
+          <ToolTip>DataMember name</ToolTip>
+          <Default>id</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>datatype</ID>
+          <ToolTip>Propertytype</ToolTip>
+          <Default>int</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>propertyname</ID>
+          <ToolTip>Propertyname</ToolTip>
+          <Default>Id</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[[DataMember(Name = "$datamembername$")]
+public $datatype$ $propertyname$ { get; set; }
+$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
