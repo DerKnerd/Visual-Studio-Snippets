@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Form Group with input</Title>
+      <Author>Imanuel Ulbricht</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>fgin</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>Label</ID>
+          <ToolTip>Label of the input element</ToolTip>
+          <Default>Label</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>text</ID>
+          <ToolTip>Type of the input element</ToolTip>
+          <Default>text</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="html" Delimiter="$"><![CDATA[<div class="form-group">
+    <label class="col-sm-4 control-label">$Label$</label>
+    <div class="col-sm-8">
+        <input class="form-control" type="$text$" value="" />
+    </div>
+</div>$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
