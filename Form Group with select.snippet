@@ -22,11 +22,18 @@
           <Function>
           </Function>
         </Literal>
+        <Literal Editable="true">
+          <ID>id</ID>
+          <ToolTip>id</ToolTip>
+          <Default>id</Default>
+          <Function>
+          </Function>
+        </Literal>
       </Declarations>
       <Code Language="html" Delimiter="$"><![CDATA[<div class="form-group">
-    <label class="col-sm-4 control-label">$Label$</label>
+    <label for="$id$" class="col-sm-4 control-label">$Label$</label>
     <div class="col-sm-8">
-        <select class="form-control"></select>
+        <select id="$id$" class="form-control"></select>
     </div>
 </div>$end$]]></Code>
     </Snippet>
