@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Form Group with static input</Title>
+      <Author>admin</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>fgstat</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>label</ID>
+          <ToolTip>label</ToolTip>
+          <Default>label</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>id</ID>
+          <ToolTip>id</ToolTip>
+          <Default>id</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="html" Delimiter="$"><![CDATA[<div class="form-group">
+    <label for="$id$" class="col-sm-4 control-label">$label$</label>
+    <div class="col-sm-8">
+        <p class="form-control-static" id="$id$"></p>
+    </div>
+</div>$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
