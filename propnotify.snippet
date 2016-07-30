@@ -39,17 +39,15 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp"><![CDATA[private $type$ $myVar$;
+      <Code Language="csharp">
+  <![CDATA[private $type$ $myVar$;
 
-public $type$ $MyProperty$
-{
+public $type$ $MyProperty$ {
     get { return $myVar$; }
-    set
-    {
-        if ($myVar$ != value)
-        {
+    set {
+		if ($myVar$ != value) {
             $myVar$ = value;
-            OnPropertyChanged("$MyProperty$");
+            RaisePropertyChanged();
         }
     }
 }]]></Code>
